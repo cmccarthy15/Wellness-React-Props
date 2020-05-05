@@ -26,29 +26,29 @@ After cloning down the project:
 
 ## What You Already Have
 ### Components
-`App`
-`Wheel`
-`WellnessItem`
-`GuidanceContainer`
-`GuidanceItem`
+- `App`: the top of your application that renders `Wheel` and `GuidanceContainer` components
+- `Wheel`: renders the `Pie` styled component and all of the `WellnessItem` components
+- `WellnessItem`: renders information for one of each wellness factor in a pie slice
+- `GuidanceContainer`: renders a header, the top row of our table, and all of the `GuidanceItem` components. 
+- `GuidanceItem`: renders information for one of each wellness factor in a table row
 
 
 ### Additional Files
-`data.js` stores the hardcoded data. Check how it's exported to make sure you're importing it correctly. 
-`styled.js` stores some special styled components made with the `styled-components` library. If you're curious about it, check out the docs below. 
+- `data.js` stores the hardcoded data. Check how it's exported to make sure you're importing it correctly. 
+- `styles.js` stores some special styled components made with the `styled-components` library. If you're curious about it, check out the docs below. 
 
 
 ## Deliverables 
 ### Core Deliverables
 - Render all WellnessItems in the Wheel
 - Give WellnessItems default prop for color in case you forget!
-- Render all GuidanceItems with correct information underneath
+- Render all GuidanceItems with correct information underneath. Hint for stars: `'⭐️'.repeat(5)` will create a string of 5 stars for you.
+- Sort the Guidance Items by number of stars
 - Map out the component hierarchy and which components need which props
 
 ### Advanced Deliverables
 If you get through all of the Core Deliverables, try your hand at the Advanced ones. Check out the gif below for how it should look. 
-- Update GuidanceContainer and GuidanceItem to also render columns for `stars` and `isPriority`. Hint for stars: `'⭐️'.repeat(5)` will create a string of 5 stars for you.
-- Sort the Guidance Items by number of stars
+- Update GuidanceContainer and GuidanceItem to also render a column for `isPriority`. 
 - If a WellnessItem is a priority, render its background gold instead of its given color. All you'll need to change is the color prop passed to `PieCSSDeck`.
 
 ![alt text][advanced_image]
@@ -57,7 +57,7 @@ If you get through all of the Core Deliverables, try your hand at the Advanced o
 
 
 ## Want some extra fun? 
-- Look through the docs for Styled Components. The wheel is primarily styled using that library in `styled.js`. Then 
+- Look through the docs for Styled Components. The wheel is primarily styled using that library in `styled.js`. Then try your hand at updating the code in `styles.js` or the components used inside of `WellnessItem`.
 
 
 

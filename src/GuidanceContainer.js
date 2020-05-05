@@ -14,6 +14,7 @@ export default class GuidanceContainer extends React.Component {
                             <td>Title</td>
                             <td>Image</td>
                             <td>Description</td>
+                            <td>Stars</td>
                         </tr>
                     </thead>
                     <tbody>
