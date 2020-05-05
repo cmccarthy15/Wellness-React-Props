@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Wellness Props Lab!
+Welcome to our mini-lab. In this lab, we're making an informational site for a wellness center. It needs to render a pie chart of the factors that contribute to holistic wellness and a table with the information underneath. All of the styling has been completed for you - so as long as you're using the correct components and elements like `tr`, `td`, and `WellnessItem` your app will look exactly like the examples.
 
-## Available Scripts
+Look out for `TODO`s in comments. Use the Core Deliverables listed below to guide you and find the `TODO`s if you're feeling stuck.
 
-In the project directory, you can run:
+![alt text][core_image]
 
-### `yarn start`
+[core_image]: ./public/WellnessCore.gif "Core Deliverables"
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Skills and Concepts to Practice
+- TL;DR Props and Components
+- Navigating a React application and component hierarchy
+- Identifying props and passing them correctly between parent and child component
+- Mapping over arrays to render
+- Conditional rendering
+- Default Props
+- When to use `{}` curlyBois
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setup
+After cloning down the project:
+- Run `git branch -b yourname` in your terminal to create your own branch
+- Run `npm install` in your terminal
+- Run `npm start` and your react application will also start, on port `3000`.
+- Remeber to `git add .` then `git commit -m "helpful message"` and `git push` when you're done or before lecture. 
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What You Already Have
+### Components
+`App`
+`Wheel`
+`WellnessItem`
+`GuidanceContainer`
+`GuidanceItem`
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Additional Files
+`data.js` stores the hardcoded data. Check how it's exported to make sure you're importing it correctly. 
+`styled.js` stores some special styled components made with the `styled-components` library. If you're curious about it, check out the docs below. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deliverables 
+### Core Deliverables
+- Render all WellnessItems in the Wheel
+- Give WellnessItems default prop for color in case you forget!
+- Render all GuidanceItems with correct information underneath
+- Map out the component hierarchy and which components need which props
 
-### `yarn eject`
+### Advanced Deliverables
+If you get through all of the Core Deliverables, try your hand at the Advanced ones. Check out the gif below for how it should look. 
+- Update GuidanceContainer and GuidanceItem to also render columns for `stars` and `isPriority`. Hint for stars: `'⭐️'.repeat(5)` will create a string of 5 stars for you.
+- Sort the Guidance Items by number of stars
+- If a WellnessItem is a priority, render its background gold instead of its given color. All you'll need to change is the color prop passed to `PieCSSDeck`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![alt text][advanced_image]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[advanced_image]: ./public/WellnessAdvanced.gif "Core Deliverables"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Want some extra fun? 
+- Look through the docs for Styled Components. The wheel is primarily styled using that library in `styled.js`. Then 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Resources
+- [Wellness Images](https://thewellatsacstate.com/about/dimensions-of-wellness)
+- [Styled Components](https://styled-components.com/)
+- [The Guide I Used for The Wheel](http://cssdeck.com/labs/css3-pie-chart)

@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Welcome to the Wellness Center</h1>
+      {/** TODO: Import and render the Wheel component, provided for you. It does not need any props. */}
+      <hr />
+      {/** TODO: Import and render the GuidanceContainer component, provided for you. It does not need any props. */}
     </div>
   );
 }
