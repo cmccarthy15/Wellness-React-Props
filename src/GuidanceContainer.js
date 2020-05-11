@@ -1,14 +1,16 @@
 import React from 'react';
 import { wellnessFactors } from './data';
 import GuidanceItem from './GuidanceItem';
-import WellnessItem from './WellnessItem';
+// import WellnessItem from './WellnessItem';
 // console.log(GuidanceItem)
 // console.log(wellnessFactors) //array of objects
 // console.log(WellnessItem)
 
 export default class GuidanceContainer extends React.Component {
+    
 
     renderItemInfo = () => {
+        wellnessFactors.sort((a, b) => {return b.stars - a.stars})
         return (
             <div>
                 <h3>Wellness Factors Described</h3>
@@ -19,6 +21,7 @@ export default class GuidanceContainer extends React.Component {
                             <td>Image</td>
                             <td>Description</td>
                             <td>Stars</td>
+                            <td>Priority</td>
                         </tr>
                     </thead>
                     <tbody>
