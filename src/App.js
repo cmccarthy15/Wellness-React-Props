@@ -7,13 +7,13 @@ import GuidanceContainer from './GuidanceContainer'
 
 
 class App extends Component {
-  constructor() {
-    super()
+  // constructor() {
+  //   super()
     
-    this.state = {
+    state = {
       data: wellnessFactors
     }
-  } 
+  
 
 
 render() {
@@ -27,7 +27,9 @@ render() {
     </div>
   );
 
+
 }
+
 }
 
 

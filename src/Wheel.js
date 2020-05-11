@@ -15,7 +15,7 @@ export default class Wheel extends React.Component {
 
                  {this.props.data.map(item => {
                      return (
-                         <WellnessItem key={item.id}id={item.id} color={item.color} title={item.title}/> 
+                         <WellnessItem key={item.id} id={item.id} color={item.color} title={item.title}/> 
                      )
                  })}
             </Pie>
