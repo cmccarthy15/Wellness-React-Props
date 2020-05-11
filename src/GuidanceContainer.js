@@ -1,6 +1,6 @@
 import React from 'react';
-// import { wellnessFactors } from './data';
-// import GuidanceItem from './GuidanceItem';
+import { wellnessFactors } from './data';
+import GuidanceItem from './GuidanceItem';
 
 export default class GuidanceContainer extends React.Component {
 
