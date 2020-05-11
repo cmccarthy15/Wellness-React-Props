@@ -14,7 +14,9 @@ export default class GuidanceContainer extends React.Component {
                             <td>Title</td>
                             <td>Image</td>
                             <td>Description</td>
+                            <td>Colors</td> 
                             <td>Stars</td>
+                            <td>Priority</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,7 +26,9 @@ export default class GuidanceContainer extends React.Component {
                                             Can you find it? 
                                             What warning did you get and how did it help you?
                         */}
-                           
+                        {wellnessFactors.map((factor, index) => <GuidanceItem factor={factor} key={index}/>)}
+
+                          
                     </tbody>
                 </table>
             </div>
