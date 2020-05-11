@@ -4,6 +4,10 @@ import './App.css';
 import Wheel from './Wheel'
 import GuidanceContainer from './GuidanceContainer'
 
+this.state ={
+  wellnessFactors = []
+}
+
 function App() {
   return (
     <div className="App">
