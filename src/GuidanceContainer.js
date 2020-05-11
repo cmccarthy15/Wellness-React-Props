@@ -1,6 +1,10 @@
 import React from 'react';
 import { wellnessFactors } from './data';
 import GuidanceItem from './GuidanceItem';
+import WellnessItem from './WellnessItem';
+// console.log(GuidanceItem)
+// console.log(wellnessFactors) //array of objects
+// console.log(WellnessItem)
 
 export default class GuidanceContainer extends React.Component {
 
@@ -18,6 +22,7 @@ export default class GuidanceContainer extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
+                        {wellnessFactors.map((factor, index) => <GuidanceItem factor={factor} key={index} />)}
                         {/** TODO:  Render GuidanceItems here
                                     Check the GuidanceItem component for the expect props
                                     BUG CATCHER: There's a bug in GuidanceItem that will make it fail. 
