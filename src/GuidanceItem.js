@@ -1,13 +1,13 @@
 import React from 'react';
-// import GuidanceItem from './GuidanceItem'
 
-const GuidanceItem = () => {
+const GuidanceItem = (props) => {
+
     return (
         <tr>
-            <td>{this.props.factor.title}</td>
-            <td><img src={this.props.factor.image} alt={this.props.factor.title}/></td>
-            <td>{this.props.factor.description}</td>
-            <td>{this.props.factor.stars}</td>
+            <td>{props.factor.title}</td>
+            <td><img src={props.factor.image} alt={props.factor.title}/></td>
+            <td>{props.factor.description}</td>
+            <td>{props.factor.stars}</td>
         </tr>
     )
 }
