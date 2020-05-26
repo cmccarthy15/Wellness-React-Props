@@ -3,6 +3,8 @@ Welcome to our mini-lab. In this lab, we're making an informational site for a w
 
 Look out for `TODO`s in comments. Use the Core Deliverables listed below to guide you and find the `TODO`s if you're feeling stuck.
 
+IMPORTANT NOTE: This project uses the `styled-components` library for the styling of the `WellnessItem` component. You *do not* need to be concerned with `HoldCSSDeck` or `PieCSSDeck` for the core deliverables. They are essentially custom components defined for you. 
+
 ![alt text][core_image]
 
 [core_image]: ./public/WellnessCore.gif "Core Deliverables"
@@ -18,10 +20,10 @@ Look out for `TODO`s in comments. Use the Core Deliverables listed below to guid
 
 ## Setup
 After cloning down the project:
-- Run `git branch -b yourname` in your terminal to create your own branch
+- Run `git checkout -b yourname` in your terminal to create your own branch
 - Run `npm install` in your terminal
-- Run `npm start` and your react application will also start, on port `3000`.
-- Remeber to `git add .` then `git commit -m "helpful message"` and `git push` when you're done or before lecture. 
+- Run `npm start` and your react application will start on port `3000`.
+- Remember to `git add .` then `git commit -m "helpful message"` and `git push` when you're done or before lecture. 
 
 
 ## What You Already Have
