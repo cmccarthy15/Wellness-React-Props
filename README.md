@@ -19,8 +19,7 @@ IMPORTANT NOTE: This project uses the `styled-components` library for the stylin
 - When to use `{}` curlyBois
 
 ## Setup
-After cloning down the project:
-- Run `git checkout -b yourname` in your terminal to create your own branch
+After pulling down your class repo and navigating to the correct folder:
 - Run `npm install` in your terminal
 - Run `npm start` and your react application will start on port `3000`.
 - Remember to `git add .` then `git commit -m "helpful message"` and `git push` when you're done or before lecture. 
